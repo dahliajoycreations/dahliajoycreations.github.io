@@ -1,9 +1,17 @@
 ---
 # GitHub Pages builds this page automatically.
-# Every .jpg, .jpeg, .png or .webp file in the images/gallery folder is shown below.
+# Every photo in the images folder is shown below (except anything in images/site,
+# which is reserved for page photos that shouldn't appear in the gallery).
 # Name photos descriptively (e.g. "swirl-pantograph-floral-quilt.jpg"); the file name becomes the image description.
 ---
-{%- assign gallery = site.static_files | where_exp: "f", "f.path contains '/images/gallery/'" -%}
+{%- assign gallery = "" | split: "" -%}
+{%- for f in site.static_files -%}
+  {%- if f.path contains '/images/' -%}
+    {%- unless f.path contains '/images/site/' -%}
+      {%- assign gallery = gallery | push: f -%}
+    {%- endunless -%}
+  {%- endif -%}
+{%- endfor -%}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -190,7 +198,7 @@
       <p class="djc-gal-lead">There's much to see here. Take your time and look around. These are quilts finished on the longarm in the Dahlia Joy studio, each with edge-to-edge quilting chosen to suit its piecing. Want to see the patterns? Browse the <a href="https://longarmassistant.com/gallery/dahliajoycreations" target="_blank" rel="noopener">quilting pattern gallery</a>.</p>
     </section>
 
-    <!-- PHOTO GRID (built automatically from images/gallery) -->
+    <!-- PHOTO GRID (built automatically from the images folder) -->
     {%- if gallery.size > 0 %}
     <ul class="djc-gal-grid">
       {%- for f in gallery %}
