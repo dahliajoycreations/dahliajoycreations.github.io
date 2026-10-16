@@ -1,16 +1,77 @@
+
+Yes, and I can do it right here; you don’t need a separate tool. I just need access to the photos. Either way works:
+
+Connect the folder (best for many photos). In the Claude desktop app, click + beside the message box, choose Add folder, and pick the folder with the gallery photos. I’ll resize every photo to 1600 px wide, compress it to roughly 200–500 KB, and save the results to a new images/gallery folder next to the originals. Your originals stay untouched.
+Attach the photos to a message here. Fine for a handful. I’ll send back resized copies to download.
+After that, you drag the resized images folder into GitHub.
+
+can you resize photos
+
+Read a file, ran a command on your computer, and 2 more steps
+I’ve seen all seven. I’ll give them descriptive names, tidy a couple of others, and set up a clean folder to drag into GitHub.
+
+Ran a command on your computer
+Done. Your photos are resized and organized on your computer:
+
+D:\Downloads\images\upload\images\gallery holds 27 web-ready photos, 12 MB total (they were about 130 MB). Each is 1600 px wide or smaller, and the GPS location data your phone embeds has been removed.
+D:\Downloads\images\originals holds your untouched originals (plus a preview sheet I made). Don’t upload this folder.
+I renamed the 7 camera-numbered photos after looking at them, for example pinwheel-quilt-loaded-on-longarm-frame.jpg and red-and-navy-quilt-with-arc-pantograph-close-up.jpg. These names become the descriptions Google reads.
+
+Step 14b: Upload
+
+In File Explorer, open D:\Downloads\images\upload.
+In the GitHub repo, click +, then Upload files.
+Drag the images folder (the one inside upload) onto the GitHub page. It keeps the images/gallery structure.
+Click Commit changes.
+After a minute, open https://dahliajoycreations.github.io/gallery and send a screenshot.
+is the index the home page?
+
+Checking whether site navigation includes a home link.
+Checking whether site navigation includes a home link.
+Yes. index.html is the home page. When someone visits dahliajoycreations.com, the web server automatically shows index.html, so the file must keep exactly that name.
+
+To get back to it from any other page, visitors click the “Dahlia Joy Creations” name at the top left. Unlike the GoDaddy menu, there’s no separate “Home” link in the menu.
+
+Pasted text.txt
+Pasted text.txt
+TXT
+fix the drop down menu for longarm quilting link at top
+
+Shared a file, ran a command
+The file you pasted is the old homepage, from before I added the dropdown. Its menu still has plain “Longarm Quilting” and “Pricing” links. The newer version with the dropdown didn’t make it into GitHub.
+
+That fixed version is attached as index.html. It has the Longarm Quilting ▾ dropdown (Longarm Quilting, How to Prepare Your Quilt, Quilting Pattern Gallery, Pricing, Intake Form) and Kathleen’s name in the business info.
+
+Step 15:
+
+Download index.html from my message.
+In the repo, click +, then Upload files, and drag it in (it replaces the old one).
+Click Commit changes.
+Wait a minute, then reload the site with Ctrl+F5 so your browser doesn’t show the old cached copy.
+The other pages (longarm-quilting.html, how-to-prepare-your-quilt.html, pricing.html, intake-form.html) also got the dropdown in that same update. If their menus still look old, upload those 4 files from that earlier message too.
+
+
+Index
+Code·HTML 
+
+
+
+
+
+Index · HTML
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
+ 
   <!-- SEO -->
   <title>Longarm Quilting in Edmonds, WA | Dahlia Joy Creations</title>
   <meta name="description" content="Professional edge-to-edge longarm quilting in Edmonds, Washington, from a quilter with 25+ years of experience. Local drop-off and mail-in quilts welcome.">
   <link rel="canonical" href="https://dahliajoycreations.com/">
   <meta name="theme-color" content="#d8bfd8">
   <meta name="p:domain_verify" content="022b6bdad58d08bc6a7956f39ccb2399">
-
+ 
   <!-- Social sharing -->
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Dahlia Joy Creations">
@@ -20,7 +81,7 @@
   <meta property="og:image" content="https://img1.wsimg.com/isteam/ip/7837522e-3018-447f-bc9c-71fa306b4f88/Flag%20quilt%20on%20ladder.png/:/rs=w:1200">
   <meta property="og:locale" content="en_US">
   <meta name="twitter:card" content="summary_large_image">
-
+ 
   <!-- Structured data (Google + AI search) -->
   <script type="application/ld+json">
   {
@@ -30,6 +91,7 @@
     "name": "Dahlia Joy Creations",
     "description": "Professional edge-to-edge longarm quilting and handmade creations, based in Edmonds, Washington. Local quilts and mail-in quilts from across the United States.",
     "url": "https://dahliajoycreations.com/",
+    "founder": { "@type": "Person", "@id": "https://dahliajoycreations.com/#kathleen", "name": "Kathleen Kingen" },
     "image": "https://img1.wsimg.com/isteam/ip/7837522e-3018-447f-bc9c-71fa306b4f88/Flag%20quilt%20on%20ladder.png/:/rs=w:1200",
     "address": {
       "@type": "PostalAddress",
@@ -59,11 +121,11 @@
     ]
   }
   </script>
-
+ 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Lora:wght@400;500;600;700&display=swap" rel="stylesheet">
-
+ 
   <style>
     html, body { margin: 0; padding: 0; background: #FBF7F3; }
     .djc-wrap { font-family: 'Lora', Georgia, serif; color: #4A3B3B; line-height: 1.6; max-width: 100%; }
@@ -76,7 +138,7 @@
     .djc-btn-primary { background: #7A2E42; color: #fff; }
     .djc-btn-secondary { color: #7A2E42; border-bottom: 2px solid #7A2E42; padding: 8px 4px; border-radius: 0; }
     .djc-btn-white { background: #fff; color: #7A2E42; }
-
+ 
     /* Header / nav */
     .djc-header { background: #FFF8F5; border-bottom: 1px solid #EFDDE5; padding: 18px 40px; }
     .djc-header-inner { max-width: 1100px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; gap: 20px; flex-wrap: wrap; }
@@ -86,7 +148,7 @@
     .djc-nav a:hover { color: #7A2E42; }
     .djc-nav .djc-nav-cta { background: #7A2E42; color: #fff; padding: 8px 18px; border-radius: 999px; }
     .djc-nav .djc-nav-cta:hover { color: #fff; opacity: 0.85; }
-
+ 
     /* Section 1 — Hero */
     .djc-hero { background: linear-gradient(135deg, #F8ECEC 0%, #F5E5EA 100%); padding: 80px 40px; }
     .djc-hero-inner { max-width: 1100px; margin: 0 auto; display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center; }
@@ -98,7 +160,7 @@
     .djc-hero-content p.djc-hero-body { font-size: 18px; max-width: 560px; margin: 0 0 40px; color: #5A4848; }
     .djc-hero-img { border-radius: 24px; overflow: hidden; aspect-ratio: 4/5; background: #EFDDE5; }
     .djc-hero-img img { width: 100%; height: 100%; object-fit: cover; display: block; }
-
+ 
     /* Section 2 — Longarm Feature */
     .djc-longarm { padding: 80px 40px; background: #FFF8F5; }
     .djc-longarm-inner { max-width: 1100px; margin: 0 auto; display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center; }
@@ -107,7 +169,7 @@
     .djc-longarm-content h2 { font-size: 78px; margin: 0 0 24px; }
     .djc-longarm-content p { font-size: 17px; margin: 0 0 20px; color: #5A4848; }
     .djc-longarm-actions { margin-top: 32px; display: flex; gap: 16px; flex-wrap: wrap; align-items: center; }
-
+ 
     /* Section 3 — Every stitch matters */
     .djc-stitch { padding: 60px 40px; background: #FBF7F3; }
     .djc-stitch-inner { max-width: 1100px; margin: 0 auto; position: relative; }
@@ -116,7 +178,7 @@
     .djc-stitch-card { position: absolute; bottom: 40px; left: 40px; background: #FFF8F5; padding: 28px 32px; border-radius: 16px; max-width: 340px; box-shadow: 0 6px 24px rgba(122,46,66,0.08); }
     .djc-stitch-card h3 { font-family: 'Lora', serif; color: #7A2E42; margin: 0 0 8px; font-size: 20px; font-weight: 600; }
     .djc-stitch-card p { margin: 0; font-size: 15px; color: #5A4848; }
-
+ 
     /* Section 4 — Process */
     .djc-process { padding: 80px 40px; background: #F5F1EE; }
     .djc-process-inner { max-width: 1100px; margin: 0 auto; }
@@ -128,7 +190,7 @@
     .djc-step-rule { width: 40px; height: 1px; background: #A8B89C; margin-bottom: 24px; }
     .djc-step h3 { font-size: 44px; margin: 0 0 16px; }
     .djc-step p { font-size: 15px; margin: 0; color: #5A4848; }
-
+ 
     /* Section 5 — Gallery */
     .djc-gallery { padding: 80px 40px; background: #F5F1EE; }
     .djc-gallery-inner { max-width: 1100px; margin: 0 auto; }
@@ -142,7 +204,7 @@
     .djc-gallery-img img { width: 100%; height: 100%; object-fit: cover; display: block; }
     .djc-quote-card { background: #7A2E42; color: #fff; border-radius: 16px; padding: 24px 28px; display: flex; align-items: center; }
     .djc-quote-card p { font-size: 17px; margin: 0; line-height: 1.4; }
-
+ 
     /* Section 6 — Shop */
     .djc-shop { padding: 80px 40px; background: #FBF7F3; }
     .djc-shop-inner { max-width: 1100px; margin: 0 auto; display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center; }
@@ -153,7 +215,7 @@
     .djc-shop-eyebrow { display: flex; align-items: center; gap: 8px; margin-bottom: 12px; font-weight: 600; color: #2B2323; font-size: 14px; letter-spacing: 0.5px; }
     .djc-shop-eyebrow::before { content: "✦"; color: #7A2E42; }
     .djc-shop-notes { font-size: 13px; color: #8A7373; margin-top: 12px; }
-
+ 
     /* Section 7 — Final CTA */
     .djc-cta { background: #7A2E42; padding: 100px 40px; position: relative; overflow: hidden; color: #fff; }
     .djc-cta::before, .djc-cta::after { content: ""; position: absolute; border-radius: 50%; border: 40px solid rgba(255,255,255,0.06); }
@@ -166,7 +228,7 @@
     .djc-cta p { font-size: 18px; max-width: 620px; margin: 0 0 40px; color: #F5D5DC; }
     .djc-cta-actions { display: flex; gap: 16px; flex-wrap: wrap; align-items: center; }
     .djc-cta-actions .djc-btn-secondary { color: #F5D5DC; border-bottom-color: #F5D5DC; }
-
+ 
     /* Footer */
     .djc-footer { background: #2B2323; color: #E8D9D9; padding: 50px 40px 30px; font-size: 14px; }
     .djc-footer-inner { max-width: 1100px; margin: 0 auto; display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 40px; }
@@ -177,7 +239,7 @@
     .djc-footer a { color: #E8D9D9; text-decoration: none; }
     .djc-footer a:hover { color: #fff; }
     .djc-footer-bottom { max-width: 1100px; margin: 30px auto 0; padding-top: 20px; border-top: 1px solid #4A3B3B; font-size: 13px; color: #B8A5A5; }
-
+ 
     /* Mobile */
     @media (max-width: 768px) {
       .djc-header { padding: 14px 24px; }
@@ -200,29 +262,55 @@
       .djc-footer { padding: 40px 24px 24px; }
       .djc-footer-inner { grid-template-columns: 1fr; gap: 28px; }
     }
+  
+    /* Dropdown menu (shared) */
+    .djc-dd { position: relative; }
+    .djc-dd-btn { font: inherit; font-size: 15px; color: #4A3B3B; background: none; border: 0; padding: 0; cursor: pointer; display: inline-flex; align-items: center; gap: 5px; }
+    .djc-dd-btn:hover, .djc-dd-active .djc-dd-btn { color: #7A2E42; }
+    .djc-dd-active .djc-dd-btn { border-bottom: 2px solid #7A2E42; }
+    .djc-dd-caret { font-size: 11px; transition: transform 0.2s; }
+    .djc-dd.open .djc-dd-caret { transform: rotate(180deg); }
+    .djc-dd-menu { display: none; position: absolute; top: calc(100% + 10px); left: -18px; z-index: 100; list-style: none; margin: 0; padding: 8px 0; min-width: 250px; background: #FFF8F5; border: 1px solid #EFDDE5; border-radius: 12px; box-shadow: 0 8px 24px rgba(122,46,66,0.12); }
+    .djc-dd-menu::before { content: ""; position: absolute; top: -12px; left: 0; right: 0; height: 12px; }
+    .djc-dd.open .djc-dd-menu { display: block; }
+    @media (hover: hover) { .djc-dd:hover .djc-dd-menu { display: block; } }
+    .djc-nav .djc-dd-menu a { display: block; padding: 10px 18px; font-size: 15px; color: #4A3B3B; text-decoration: none; white-space: nowrap; border-bottom: 0; }
+    .djc-nav .djc-dd-menu a:hover, .djc-nav .djc-dd-menu a[aria-current="page"] { background: #F5E5EA; color: #7A2E42; }
+    @media (max-width: 820px) {
+      .djc-dd-btn { font-size: 14px; }
+      .djc-dd-menu { left: 0; min-width: 230px; }
+    }
   </style>
 </head>
 <body>
 <div class="djc-wrap">
-
+ 
   <!-- HEADER -->
   <header class="djc-header">
     <div class="djc-header-inner">
       <a href="/" class="djc-logo">Dahlia Joy Creations</a>
       <nav class="djc-nav" aria-label="Main">
-        <a href="/longarm-quilting">Longarm Quilting</a>
-        <a href="/pricing">Pricing</a>
-        <a href="/gallery">Gallery</a>
+        <div class="djc-dd">
+          <button type="button" class="djc-dd-btn" aria-expanded="false" aria-controls="djc-dd-menu">Longarm Quilting <span class="djc-dd-caret" aria-hidden="true">▾</span></button>
+          <ul class="djc-dd-menu" id="djc-dd-menu">
+            <li><a href="/longarm-quilting">Longarm Quilting</a></li>
+            <li><a href="/how-to-prepare-your-quilt">How to Prepare Your Quilt</a></li>
+            <li><a href="https://longarmassistant.com/gallery/dahliajoycreations" target="_blank" rel="noopener">Quilting Pattern Gallery ↗</a></li>
+            <li><a href="/pricing">Pricing</a></li>
+            <li><a href="/intake-form">Intake Form</a></li>
+          </ul>
+        </div>
         <a href="https://craftersmarket.org/makers/dahlia-joy-creations" target="_blank" rel="noopener">Shop</a>
+        <a href="/gallery">Gallery</a>
         <a href="/about">About</a>
         <a href="/contact">Contact</a>
         <a href="/intake-form" class="djc-nav-cta">Intake Form</a>
       </nav>
     </div>
   </header>
-
+ 
   <main>
-
+ 
   <!-- SECTION 1: HERO -->
   <section class="djc-hero">
     <div class="djc-hero-inner">
@@ -245,7 +333,7 @@
       </div>
     </div>
   </section>
-
+ 
   <!-- SECTION 2: LONGARM FEATURE -->
   <section class="djc-longarm">
     <div class="djc-longarm-inner">
@@ -263,7 +351,7 @@
       </div>
     </div>
   </section>
-
+ 
   <!-- SECTION 3: EVERY STITCH MATTERS -->
   <section class="djc-stitch">
     <div class="djc-stitch-inner">
@@ -276,7 +364,7 @@
       </div>
     </div>
   </section>
-
+ 
   <!-- SECTION 4: PROCESS -->
   <section class="djc-process">
     <div class="djc-process-inner">
@@ -305,7 +393,7 @@
       </div>
     </div>
   </section>
-
+ 
   <!-- SECTION 5: GALLERY -->
   <section class="djc-gallery">
     <div class="djc-gallery-inner">
@@ -337,7 +425,7 @@
       </div>
     </div>
   </section>
-
+ 
   <!-- SECTION 6: SHOP -->
   <section class="djc-shop">
     <div class="djc-shop-inner">
@@ -353,7 +441,7 @@
       </div>
     </div>
   </section>
-
+ 
   <!-- SECTION 7: FINAL CTA -->
   <section class="djc-cta">
     <div class="djc-cta-inner">
@@ -366,9 +454,9 @@
       </div>
     </div>
   </section>
-
+ 
   </main>
-
+ 
   <!-- FOOTER -->
   <footer class="djc-footer">
     <div class="djc-footer-inner">
@@ -400,7 +488,25 @@
     </div>
     <div class="djc-footer-bottom">© 2026 Dahlia Joy Creations. All rights reserved.</div>
   </footer>
-
+ 
 </div>
+ 
+  <script>
+    (function () {
+      var dd = document.querySelector('.djc-dd');
+      if (!dd) return;
+      var btn = dd.querySelector('.djc-dd-btn');
+      function close() { dd.classList.remove('open'); btn.setAttribute('aria-expanded', 'false'); }
+      btn.addEventListener('click', function (e) {
+        e.stopPropagation();
+        var open = dd.classList.toggle('open');
+        btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+      });
+      document.addEventListener('click', function (e) { if (!dd.contains(e.target)) close(); });
+      document.addEventListener('keydown', function (e) { if (e.key === 'Escape') { close(); btn.focus(); } });
+    })();
+  </script>
 </body>
 </html>
+ 
+Claude finished the response
