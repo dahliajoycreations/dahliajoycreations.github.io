@@ -6,12 +6,13 @@
 ---
 {%- assign gallery = "" | split: "" -%}
 {%- for f in site.static_files -%}
-  {%- if f.path contains '/images/' -%}
+  {%- if f.path contains '/images/gallery/' -%}
     {%- unless f.path contains '/images/site/' -%}
       {%- assign gallery = gallery | push: f -%}
     {%- endunless -%}
   {%- endif -%}
 {%- endfor -%}
+{%- assign gallery = gallery | sort: "path" -%}
 <!DOCTYPE html>
 <html lang="en">
 <head>
